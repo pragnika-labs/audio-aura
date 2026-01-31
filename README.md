@@ -1,88 +1,84 @@
 # Audio Aura
 
-## What is Audio Aura?
+Audio Aura is a personal data analytics project that explores my music listening behavior over time using a synthetic dataset inspired by Spotify listening history.
 
-Audio Aura is a personal analytics project where I explored my own music listening behavior through data.
+The goal of this project is not recommendation or prediction, but behavioral analysis to understand how mood, time of day, and emotional periods show up in listening patterns.
 
-Using a small, hand-curated list of songs and custom behavioral rules, I simulated a Spotify-style listening history that reflects how I actually listen to music across different times of the day, routines, and emotional states.
+## Project Overview
 
-The goal of this project was not to predict songs, but to understand patterns in my behavior and see how mood, time, and life events show up in listening habits.
+Since access to the Spotify API was unavailable, I engineered my own dataset to realistically simulate my listening behavior.
 
-## Why I Built This Project
+Starting from a small, hand-curated list of songs with emotional attributes, I used Python to generate a time-series dataset that reflects:
+- Daily routines and listening habits
+- Time-of-day preferences
+- Periods of emotional disruption
+- Repetition and flow-state listening
 
-I originally wanted to analyze my actual Spotify listening data, but access to the Spotify API was unavailable at the time.
+This synthetic dataset is then analyzed using exploratory data analysis, clustering, and basic machine learning techniques.
 
-Instead of dropping the idea, I decided to build the dataset myself. I treated this as an opportunity to design a realistic simulation of my listening behavior based on how I actually consume music throughout the day and across different emotional states. 
+## Dataset Generation
 
-This project is personal by design. Rather than analyzing a generic dataset, I wanted to study patterns that reflect real routines, habits, and life events.
+The listening data is generated using a custom Python script that simulates behavior rather than random activity.
 
-## How the Data Was Created
+Key aspects of the simulation include:
+- A fixed timeline with realistic timestamps
+- Personal sleep and activity routines
+- Music-free days to reflect real-life breaks
+- Probabilistic song selection based on mood and time
+- An emotional disruption period that influences listening choices
 
-Since this project could not rely on real Spotify data, I generated a synthetic listening dataset designed to closely mirror my actual listening behavior.
+The result is a Spotify-style listening history designed to resemble real user behavior.
 
-I started with a small, hand-curated list of 60 songs. Each song was assigned two core attributes:
-- **Valence**, representing how happy or sad the song feels
-- **Energy**, representing how intense or calm the song feels
+## Analysis Highlights
 
-Using Python, I wrote a custom data generation script that simulates how I listen to music over time. Rather than generating random plays, the script follows behavioral rules that reflect real routines and habits.
+The analysis notebook focuses on uncovering patterns rather than building production models.
 
-## Behavioral Rules & Simulation Logic
+Key insights include:
+- A measurable drop in average song happiness during an emotional disruption period
+- Time-of-day effects on listening mood
+- Repetition and concentration around specific songs during low periods
+- Identification of recurring mood-based listening personas using clustering
+- Validation of cluster structure using a simple classification model
 
-The synthetic listening data was generated using rules modeled directly from my own routines and habits. These behaviors are intentionally personal and are not meant to generalize or represent typical listening patterns.
+All analysis steps are documented directly inside the notebook with markdown explanations.
 
-**Core simulation logic:**
+## Project Structure
 
-- **Fixed timeline**  
-  Listening activity is generated within a defined window (November 2025 to January 2026) to keep the dataset bounded and analyzable.
+audio-aura/
+│
+├── data/
+│ ├── my_spotify_data.csv
+│ └── spotify_data_clustered.csv
+│
+├── notebooks/
+│ └── analysis.ipynb
+│
+├── scripts/
+│ ├── generate_data.py
+│ └── song_data.py
+│
+└── README.md
 
-- **Personal sleep routine**  
-  Listening stops at **3:00 AM** and resumes at **12:00 PM**, reflecting my own sleep and wake patterns during this period rather than an assumed “normal” schedule.
+## Tools & Technologies
 
-- **Music-free days**  
-  After waking up, there is a **30% chance of no listening for the entire day**, representing days where I am busy, unwell, or simply not interested in music.
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Jupyter Notebook
 
-- **Flow states and breaks**  
-  When music plays, it often happens in short back-to-back sessions. After each song, there is a **25% chance of a long break** (1–4 hours), reflecting how I switch between activities like work, gaming, or watching content.
+## Notes
 
-- **Emotion-driven listening period**  
-  Between **January 19 and January 26**, listening behavior shifts toward lower-valence songs, reflecting a personal low period that temporarily influenced music choice.
+This project is intentionally personal and exploratory.  
+The behaviors modeled here are based on my own routines and are not meant to generalize to other users.
 
-- **Time-of-day preferences**  
-  Late-night listening (12:00–3:00 AM) generally favors lower-valence music, but a **10% chance of high-energy tracks** is retained to reflect occasional mood shifts and avoid rigid correlations.
+## Contact
 
-## Feature Engineering & Data Setup
+**Pragnika Mancholaa**  
+Bachelor of Science in Computer Science  
 
-Once the synthetic dataset was generated, additional features were created to support time-based and behavioral analysis.
-
-Key transformations include:
-
-- **Timestamp parsing**  
-  Timestamps were converted into proper datetime objects to enable temporal analysis.
-
-- **Time-of-day buckets**  
-  Each listening event was mapped to a time period based on the hour of the day:
-  - Late Night (00:00–03:00)
-  - Morning (03:00–12:00)
-  - Afternoon (12:00–17:00)
-  - Evening (17:00–21:00)
-  - Night (21:00–00:00)
-
-- **Emotional disruption flag**  
-  A boolean flag was introduced to isolate the defined emotional disruption period (January 19–26), allowing direct comparison between baseline and disrupted listening behavior.
-
-These engineered features form the foundation for the exploratory analysis, clustering, and modeling performed later in the project.
-
-## Quantifying the Mood Shift
-
-One of the central questions in this project was whether a noticeable shift in listening behavior could be observed during the defined emotional disruption period.
-
-To examine this, I compared average song valence during baseline listening days against the disruption window (January 19–26).
-
-Key observations:
-
-- **Average valence during baseline period:** 0.46  
-- **Average valence during disruption period:** 0.26  
-- **Relative drop in happiness:** 42.7%
-
-This change was visualized using a line chart to clearly contrast baseline listening behavior with the disrupted period. The results show a sharp and measurable dip in average song valence, supporting the idea that emotional state can significantly influence music choice over time.
+Email: pragnikamancholaa@gmail.com  
+LinkedIn: https://www.linkedin.com/in/pragnika-mancholaa  
+Hashnode: https://pragnika.hashnode.dev
+GitHub: https://github.com/pragnika-labs
 

@@ -72,3 +72,17 @@ Key transformations include:
 
 These engineered features form the foundation for the exploratory analysis, clustering, and modeling performed later in the project.
 
+## Quantifying the Mood Shift
+
+One of the central questions in this project was whether a noticeable shift in listening behavior could be observed during the defined emotional disruption period.
+
+To examine this, I compared average song valence during baseline listening days against the disruption window (January 19–26).
+
+Key observations:
+
+- **Average valence during baseline period:** 0.46  
+- **Average valence during disruption period:** 0.26  
+- **Relative drop in happiness:** 42.7%
+
+This change was visualized using a line chart to clearly contrast baseline listening behavior with the disrupted period. The results show a sharp and measurable dip in average song valence, supporting the idea that emotional state can significantly influence music choice over time.
+

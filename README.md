@@ -79,7 +79,7 @@ The behaviors modeled here are based on my own routines and are not meant to gen
 **Pragnika Mancholaa**  
 Bachelor of Science in Computer Science  
 
-Email: pragnikamancholaa@gmail.com 
+Email: [pragnikamancholaa@gmail.com](mailto:pragnikamancholaa@gmail.com)
 
 LinkedIn: https://www.linkedin.com/in/pragnika-mancholaa  
 

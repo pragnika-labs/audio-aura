@@ -44,19 +44,21 @@ All analysis steps are documented directly inside the notebook with markdown exp
 
 ## Project Structure
 
+```text
 audio-aura/
 ├── data/
-│ ├── my_spotify_data.csv
-│ └── spotify_data_clustered.csv
+│   ├── my_spotify_data.csv
+│   └── spotify_data_clustered.csv
 │
 ├── notebooks/
-│ └── analysis.ipynb
+│   └── analysis.ipynb
 │
 ├── scripts/
-│ ├── generate_data.py
-│ └── song_data.py
+│   ├── generate_data.py
+│   └── song_data.py
 │
 └── README.md
+```
 
 
 ## Tools & Technologies

@@ -28,24 +28,47 @@ Using Python, I wrote a custom data generation script that simulates how I liste
 
 ## Behavioral Rules & Simulation Logic
 
-To make the synthetic dataset feel realistic, the listening history was generated using explicit behavioral rules rather than random sampling. These rules were designed to reflect real routines, interruptions, and emotional shifts.
+The synthetic listening data was generated using rules modeled directly from my own routines and habits. These behaviors are intentionally personal and are not meant to generalize or represent typical listening patterns.
 
-**Core simulation rules:**
+**Core simulation logic:**
 
-- **Fixed timeline:**  
-  All listening activity is generated between **November 1, 2025 and January 27, 2026**, ensuring a consistent and realistic time window for analysis.
+- **Fixed timeline**  
+  Listening activity is generated within a defined window (November 2025 to January 2026) to keep the dataset bounded and analyzable.
 
-- **Daily routine and sleep cycle:**  
-  Listening stops at **3:00 AM** and resumes at **12:00 PM**, reflecting a stable sleep schedule.
+- **Personal sleep routine**  
+  Listening stops at **3:00 AM** and resumes at **12:00 PM**, reflecting my own sleep and wake patterns during this period rather than an assumed “normal” schedule.
 
-- **Skipped days:**  
-  After waking up, there is a **30% chance that no music is played for the entire day**, simulating busy or music-free days.
+- **Music-free days**  
+  After waking up, there is a **30% chance of no listening for the entire day**, representing days where I am busy, unwell, or simply not interested in music.
 
-- **Flow states and breaks:**  
-  Music is generated in short continuous sessions where songs play back-to-back. After each song, there is a **25% chance of a long break** lasting between one and four hours.
+- **Flow states and breaks**  
+  When music plays, it often happens in short back-to-back sessions. After each song, there is a **25% chance of a long break** (1–4 hours), reflecting how I switch between activities like work, gaming, or watching content.
 
-- **Emotional disruption period:**  
-  A defined period between **January 19 and January 26** alters song selection probabilities to reflect a temporary emotional shift, with lower-valence songs becoming more common.
+- **Emotion-driven listening period**  
+  Between **January 19 and January 26**, listening behavior shifts toward lower-valence songs, reflecting a personal low period that temporarily influenced music choice.
 
-- **Time-of-day effects:**  
-  Late-night listening (between **12:00 AM and 3:00 AM**) generally favors lower-valence music, with occasional high-energy exceptions to avoid overly deterministic behavior.
+- **Time-of-day preferences**  
+  Late-night listening (12:00–3:00 AM) generally favors lower-valence music, but a **10% chance of high-energy tracks** is retained to reflect occasional mood shifts and avoid rigid correlations.
+
+## Feature Engineering & Data Setup
+
+Once the synthetic dataset was generated, additional features were created to support time-based and behavioral analysis.
+
+Key transformations include:
+
+- **Timestamp parsing**  
+  Timestamps were converted into proper datetime objects to enable temporal analysis.
+
+- **Time-of-day buckets**  
+  Each listening event was mapped to a time period based on the hour of the day:
+  - Late Night (00:00–03:00)
+  - Morning (03:00–12:00)
+  - Afternoon (12:00–17:00)
+  - Evening (17:00–21:00)
+  - Night (21:00–00:00)
+
+- **Emotional disruption flag**  
+  A boolean flag was introduced to isolate the defined emotional disruption period (January 19–26), allowing direct comparison between baseline and disrupted listening behavior.
+
+These engineered features form the foundation for the exploratory analysis, clustering, and modeling performed later in the project.
+

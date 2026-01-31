@@ -45,7 +45,6 @@ All analysis steps are documented directly inside the notebook with markdown exp
 ## Project Structure
 
 audio-aura/
-│
 ├── data/
 │ ├── my_spotify_data.csv
 │ └── spotify_data_clustered.csv
@@ -58,6 +57,7 @@ audio-aura/
 │ └── song_data.py
 │
 └── README.md
+
 
 ## Tools & Technologies
 

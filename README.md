@@ -82,5 +82,6 @@ Bachelor of Science in Computer Science
 Email: pragnikamancholaa@gmail.com  
 LinkedIn: https://www.linkedin.com/in/pragnika-mancholaa  
 Hashnode: https://pragnika.hashnode.dev
+
 GitHub: https://github.com/pragnika-labs
 

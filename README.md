@@ -85,10 +85,10 @@ LinkedIn: https://www.linkedin.com/in/pragnika-mancholaa
 
 Hashnode: https://pragnika.hashnode.dev
 
+GitHub: https://github.com/pragnika-labs
+
 ## © License & Copyright
 © 2026 Pragnika. All Rights Reserved.
 
 This project, including the custom-built dataset, is for portfolio demonstration purposes only. No part of this repository may be reproduced, distributed, or used without my written permission.
-
-GitHub: https://github.com/pragnika-labs
 

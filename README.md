@@ -1,14 +1,9 @@
 # Audio Aura
 
-## © Copyright & Usage Information This repository, including all code and the custom-built dataset, is the sole intellectual property of Pragnika.
+## © License & Copyright
+© 2026 Pragnika. All Rights Reserved.
 
-It is hosted here publicly for portfolio and demonstration purposes only.
-
-You are NOT allowed to: Copy, distribute, modify, or use this code or data for commercial or personal projects without my explicit written permission.
-
-You are NOT allowed to: Re-upload this dataset to Kaggle or other platforms.
-
-If you are a recruiter or hiring manager: Please feel free to review the code structure and insights as part of my job application.
+This project, including the custom-built dataset, is for portfolio demonstration purposes only. No part of this repository may be reproduced, distributed, or used without my written permission.
 
 ## Project Overview
 

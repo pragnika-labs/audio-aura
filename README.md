@@ -1,10 +1,20 @@
 # Audio Aura
 
+## © Copyright & Usage Information This repository, including all code and the custom-built dataset, is the sole intellectual property of Pragnika.
+
+It is hosted here publicly for portfolio and demonstration purposes only.
+
+You are NOT allowed to: Copy, distribute, modify, or use this code or data for commercial or personal projects without my explicit written permission.
+
+You are NOT allowed to: Re-upload this dataset to Kaggle or other platforms.
+
+If you are a recruiter or hiring manager: Please feel free to review the code structure and insights as part of my job application.
+
+## Project Overview
+
 Audio Aura is a personal data analytics project that explores my music listening behavior over time using a synthetic dataset inspired by Spotify listening history.
 
 The goal of this project is not recommendation or prediction, but behavioral analysis to understand how mood, time of day, and emotional periods show up in listening patterns.
-
-## Project Overview
 
 Since access to the Spotify API was unavailable, I engineered my own dataset to realistically simulate my listening behavior.
 

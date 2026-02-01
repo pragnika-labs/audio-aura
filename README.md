@@ -87,8 +87,8 @@ Hashnode: https://pragnika.hashnode.dev
 
 GitHub: https://github.com/pragnika-labs
 
-## © License & Copyright
-© 2026 Pragnika. All Rights Reserved.
+## License
 
-This project, including the custom-built dataset, is for portfolio demonstration purposes only. No part of this repository may be reproduced, distributed, or used without my written permission.
+This project is licensed under the MIT License.
+© 2026 Pragnika Mancholaa.
 

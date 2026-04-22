@@ -1,3 +1,4 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 # Audio Aura
 
 Audio Aura is a personal data analytics project that explores my music listening behavior over time using a synthetic dataset inspired by Spotify listening history.

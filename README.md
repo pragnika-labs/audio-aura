@@ -74,23 +74,3 @@ audio-aura/
 
 This project is intentionally personal and exploratory.  
 The behaviors modeled here are based on my own routines and are not meant to generalize to other users.
-
-## Contact
-
-**Pragnika Mancholaa**  
-Bachelor of Science in Computer Science  
-
-Email: <a href="mailto:pragnikamancholaa@gmail.com">pragnikamancholaa@gmail.com</a>
-
-LinkedIn: https://www.linkedin.com/in/pragnika-mancholaa  
-
-Hashnode: https://pragnika.hashnode.dev
-
-GitHub: https://github.com/pragnika-labs
-
-## License
-
-This project is licensed under the MIT License.
-
-© 2026 Pragnika Mancholaa.
-
